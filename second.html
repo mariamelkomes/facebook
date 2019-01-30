@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Facebook</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script type="" src="js/jquery-3.3.1.min.js"></script>
+    <script type="" src="js/bootstrap.bundle.min.js"></script>
+    <script type="" src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="icon" type="image/png" href="img/icon320x320.jpeg" sizes="192x192">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="second.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet"  media="(max-width:600px)" href="second2.css">
+    <script >
+     $(document).ready(function()
+    {
+    $("#l").click(function()
+    {
+        $("#link").toggleClass("s");
+    });
+    $("#l2").click(function()
+    {
+        $("#link2").toggleClass("s");
+    });
+    $("#l3").click(function()
+    {
+        $("#link3").toggleClass("s");
+    });
+   $("#message").click(function(){
+        $('#mes').css("display"," inline-block")
+
+    });
+    $("#message").dblclick(function(){
+        $('#mes').css("display"," none")
+
+    });
+   
+    $('#meschat').click(function()
+    {
+        $('#meschat').css("display"," none")
+
+    });
+    $("#btnComment").click(function(){
+
+			var mycomment = $("#comment").val();
+			if(mycomment.trim().length>0)
+			{
+			var p="<p class='col-sm-12' style='background-color:#cce6ff ;border-radius: 2px; '> <img src='img/forest.jpg' class='rounded-circle' style='width: 2vw' ><b>Mahmoud</b><br> &nbsp; &nbsp; &nbsp;  &nbsp; "+mycomment+"</p>"
+											
+				$("#comment").val("");
+			    $("#commentDisplay").append(p);
+
+				}
+     });
+
+     $("#btnComment2").click(function(){
+
+	  var mycomment = $("#comment2").val();
+			if(mycomment.trim().length>0)
+			{
+			var p="<p class='col-sm-12' style='background-color:#cce6ff ;border-radius: 2px; '> <img src='img/forest.jpg' class='rounded-circle' style='width: 2vw' ><b>Mahmoud</b><br> &nbsp; &nbsp; &nbsp;  &nbsp; "+mycomment+"</p>"
+											
+				$("#comment2").val("");
+			    $("#commentDisplay2").append(p);
+
+		  }
+        });
+     $("#btnComment3").click(function(){
+
+	  var mycomment = $("#comment3").val();
+			if(mycomment.trim().length>0)
+			{
+			var p="<p class='col-sm-12' style='background-color:#cce6ff ;border-radius: 2px; '> <img src='img/forest.jpg' class='rounded-circle' style='width: 2vw' ><b>Mahmoud</b><br> &nbsp; &nbsp; &nbsp;  &nbsp; "+mycomment+"</p>"
+											
+				$("#comment3").val("");
+			    $("#commentDisplay3").append(p);
+
+		  }
+
+
+    });   
+    $("#freind").click(function(){
+        $('#frendis').css("display"," inline-block")
+
+    });
+    $("#freind").dblclick(function(){
+        $('#frendis').css("display"," none")
+
+    });
+   
+
+
+    });
+    </script>
+    
+   
+    </head>
+    <body>
+    <div class="container">
+     <nav class="navbar navbar-expand-sm navbar-dark text-white" style="background:rgb(68, 97, 186)" >
+                    
+      <a class="navbar-brand" href="#"></a>
+                      
+                        
+     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+         <span class="navbar-toggler-icon"></span>
+     </button>
+                       
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+         <ul class="navbar-nav">
+         <li class="nav-item">
+         <i class="fab fa-facebook-square" style="font-size:40px;margin-left:10%"></i>
+                                      
+         </li>
+                                    
+          <li class="nav-item">
+             <form class="form-inline" style="margin-left:5%" >
+                <div class="input-group">
+                                                 
+                 <input type="text" class="form-control" placeholder="Search ">
+                     <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="fas fa-search"></i></span>
+                     </div>
+              </div> 
+             </form>
+                                    
+         </li>
+                                   
+         </ul>
+         <ul class="navbar-nav " style="margin-left:15%" id="ulheader">
+            <li class="nav-item" style="width:30%;" >
+             <img src="img/forest.jpg" style="width:50px;border-radius: 50%; "><span><b>mariam</b></span>
+                                   
+    
+            </li>
+                                     
+            <li class="nav-item">
+                <button class="btn btn-default  text-white "><b>Home</b></button>
+                                            
+            </li>
+            <li class="nav-item">
+            <button class="btn btn-default  text-white"><b>create</b></button>
+                                            
+             </li>
+             <li class="nav-item">
+              <button class="btn btn-default  text-white"><b>create</b></button>
+                                            
+            </li>
+             <li class="nav-item">
+             <i class="fas fa-user-friends text-dark "  id="freind"></i>
+                                            
+             </li>
+             <li class="nav-item">
+           <i class="fab fa-facebook-messenger text-dark "  id="message"></i>
+                                            
+            </li>
+         <li class="nav-item">
+          <i class="fas fa-bell text-dark " style="font-size:30px; margin-left: 15px"></i>
+                                            
+          </li>
+          <li class="nav-item">
+          <div class="dropdown" style="direction: rtl">
+          <button type="button" class="btn text-dark dropdown-toggle" data-toggle="dropdown">
+                                                    
+          </button>
+         <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">New group</a>
+             <a class="dropdown-item" href="#">Activing Log</a>
+             <a class="dropdown-item" href="#">Setting</a>
+                      <a class="dropdown-item" href="#">Log out</a>
+          </div>
+         </div> 
+    
+         </li>
+    
+    
+         </ul>
+                               
+                   
+         </div> 
+        </nav>
+        
+            <div id="mes">
+                <a href="#">&#160Recet</a> 
+                <a   href="#"> &#160 &#160Message Requests</a>
+                <a   href="#"> &#160 &#160  &#160  &#160 New group</a>
+                <a   href="#"> &#160   New message</a>
+                <hr>
+                <a  href="#"><img src="img/avatar3.png" id="img3">  kero elkomes</a>
+                <span style="margin-left:55%">6:50pm</span>
+                <hr>
+                <a href="#"><img src="img/forest.jpg" id="img3"> beemen mishel</a>
+                <span style="margin-left:55%">tue</span>
+                <hr>
+                <a  href="#"><img src="img/avatar3.png" id="img3">gogo michel</a><span style="margin-left:50%">12:00am</span>
+               
+                <hr>
+                
+                <a  href="#"><img src="img/481408_210680572412433_1558096721_n.jpg" id="img3" > Demiana mishel</a>
+                <span style="margin-left:55%">tue</span>
+                <hr>
+                <button data-toggle="collapse" data-target="#chat" style="border:0px;background:rgb(231, 225, 225)">see more</button>
+                
+                <div id="chat" class="collapse">
+                        <a  href="#"><img src="img/avatar3.png" id="img3">dalia emad</a>
+                        <span style="margin-left:55%">6:50pm</span><hr>
+                        
+               
+                </div>
+
+
+            </div>
+            <div id="frendis" >
+                    <span ><img src="img/avatar3.png" id="img3"><b>&#160 koko ebram </b> <span style="margin-left:22%">
+                            50 muntul friend</span><button style="margin-left:56%">Add friend</button></span>
+
+
+            </div>
+
+        
+
+    
+    
+     <div class="row">
+     <div class="col-lg-2" id="div2" > 
+     <div class="card">
+         <span id="span"><img src="img/481408_210680572412433_1558096721_n.jpg" id="img2">mariam M</span><br>
+           <a href="#"><i class="fab fa-facebook-messenger" style="font-size:25px;color: rgb(80, 135, 197)" ></i>Messanger</a><br>
+          <a href="#"><img src="img/IMG_٢٠١٨١٢٢٩_٢٢٤٦٠٢_٠٩٥.jpg" width="30px"> Watch </a><br>
+          <a href="#" onclick="alert();event.preventDefault();"><img src="img/IMG_٢٠١٨١٢٢٩_٢٢٥٢٥٠_٣٥١.jpg"  width="30px">Marketplace</a><br>
+         <p style="color:rgb(97, 92, 92)"><b> &#160 shortCuts</b></p>
+         <a href="#"><i class="fas fa-users text-secondary"></i>&#160 Fci-Assuit </a><br>
+           <a href="#"><i class="fas fa-users text-secondary"></i> &#160information Tech-</a><br>
+  
+         <button data-toggle="collapse" data-target="#demo" style="border:0px;background:rgb(231, 225, 225)">see more</button>
+         
+         <div id="demo" class="collapse">
+            <a href="#"><i class="fas fa-users text-secondary"></i>&#160In take 39 group</a><br><br>
+            <a href="#"><i class="fas fa-users text-secondary"></i>&#160fode Code</a><br><br>
+            <a href="#"><i class="fas fa-users text-secondary"></i>&#160 Make up online </a><br><br>
+            <a href="#"><i class="fas fa-users text-secondary"></i>&#160 ITP full stack</a><br><br>
+            <a href="#"><i class="fas fa-users text-secondary"></i>&#160 ITI 3Months full </a>
+         </div>
+       
+          <p style="color:rgb(97, 92, 92)"><b> &#160 Explore</b></p>
+           <a href="#"><img src="img/Capture.PNG" width="40%">  </a>
+          <a href="#"><img src="img/Capture2.PNG" width="40%">  </a>
+          <a href="#"><img src=img/"Capture3.PNG" width="40%">  </a>
+         <a href="#"><img src="img/Capture4.PNG" width="40%">  </a>
+         <button type="button" class="btn " data-toggle="collapse" data-target="#dem"   style="border:0px;background:rgb(231, 225, 225)">See more </button>
+          <div id="dem" class="collapse">
+              
+               <a href="#"><img src="img/Capture5.PNG" width="55%">  </a><br>
+               <a href="#"><img src="img/Capture6.PNG" width="55%">  </a><br>
+           
+               <a href="#"><img src="img/Capture9.PNG" width="55%">  </a><br>
+               <a href="#"><img src="img/Capture10.PNG" width="55%">  </a><br>
+               <a href="#"><img src="img/Capture7.PNG" width="55%">  </a><br>
+              
+            </div>
+      
+    
+     </div> 
+     </div>
+    
+          
+     <div class="col-lg-6"  id="header">
+             
+             <div class="card">
+             <span id="span"> <img src="img/481408_210680572412433_1558096721_n.jpg" id="img3"><input type="text" placeholder="what is your mind" id="in1"></span>
+             <hr>
+             <ul id="ul">
+                <li> <a href="#" ><img src="img/Capture12.PNG" width="80%"> </a></li>
+                <li> <a href="#" ><img src="img/Capture13.PNG" width="80%"> </a></li>
+                <li> <a href="#" ><img src="img/Capture14.PNG" width="80%"> </a></li>
+             </ul>
+             </div>
+             <br>
+             <div class="card" >
+             <span id="span" ><img src="img/481408_210680572412433_1558096721_n.jpg" id="img4"> mariam elkomes</span> 
+             <img src="img/Capture151.PNG" width="80%">
+             <div id="commentDisplay">
+                    
+              </div>
+                                    
+             <input type="text" placeholder=" comment" style="margin-left:4%; border:0" id="comment"> </span><br><br>
+                    
+                 <span><a href="#" id="l" onclick="event.preventDefault();" style="margin-left:4%">
+                 <i id="link" class="far fa-thumbs-up " style="font-size:25px;">Like</i></a> 
+                 <button class="btn btn-default  text-dark"  style="margin-left:2%"  id="btnComment"><b>comment</b></button>
+              </div>
+             <br>
+            <div class="card">
+             
+             <span id="span" ><img src="img/avatar3.png" id="img4">  kero elkomes</span> <br>
+             <video loop controls width="90%" height="200px">
+              <source src="sample.mp4">
+
+             </video>
+             <br>
+             <div id="commentDisplay2">
+                    
+             </div>
+                                    
+               <input type="text" placeholder=" comment" style="margin-left:4%; border:0" id="comment2"> </span><br><br>
+                    
+                 <span><a href="#" id="l" onclick="event.preventDefault();" style="margin-left:4%">
+                 <i id="link" class="far fa-thumbs-up " style="font-size:25px;">Like</i></a> 
+                <button class="btn btn-default  text-dark"  style="margin-left:2%"  id="btnComment2"><b>comment</b></button>
+             </div>
+
+            
+             
+             <br>
+             <div class="card">
+             <span id="span" ><img src="img/avatar3.png" id="img4">  kero elkomes</span> <br>
+
+             <img src="img/Capture16.PNG" width="80%"><br> <br> 
+             <div id="commentDisplay3">
+                    
+             </div>
+             <input type="text" placeholder=" comment" style="margin-left:4%; border:0" id="comment3"> </span><br><br>
+             
+              <span><a href="#" id="l" onclick="event.preventDefault();" style="margin-left:4%">
+              <i id="link" class="far fa-thumbs-up " style="font-size:25px;">Like</i></a> 
+             <button class="btn btn-default  text-dark"  style="margin-left:2%"  id="btnComment3"><b>comment</b></button>
+             </div>
+            
+            
+
+              </div>
+            
+                <div class="col-lg-2"  id="stories"  > 
+                 <div class="card" >
+                    <span>stories &#160  &#160 &#160  setting</span><br>
+                    <span id="span" ><img src="img/avatar3.png" id="img6">  kero elkomes</span><br>
+                    <span id="span" > <img src="img/481408_210680572412433_1558096721_n.jpg" id="img6"> mari elkomes</a></span>&#160
+                    <span  id="span"><img src="img/lights.jpg" id="img5">  Dodo bero</a></span>&#160
+                    <button type="button" class="btn " data-toggle="collapse" data-target="#story"   style="border:0px;background:rgb(231, 225, 225)">See more </button>
+                    <div id="story" class="collapse">
+                    <span  id="span"><img src="img/forest.jpg" id="img5">  roma mishel</a></span><br><br>
+                    <span  id="span"><img src="img/lights.jpg" id="img5">  Dodo bero</a></span> </div> 
+
+               
+                 </div> <br>
+                 <div class="card">
+                        <span ><img src="img/avatar3.png" id="img5"><b>&#160 koko ebram </b> <span style="margin-left:22%">
+                                50 muntul friend</span><button style="margin-left:26%">Add friend</button></span>
+
+                     <span ><img src="img/forest.jpg" id="img5"><b>&#160 mriam mishel</b> <span style="margin-left:22%">
+                          50 muntul friend</span><button style="margin-left:26%">Add friend</button></span><br>
+
+                          <span ><img src="img/lights.jpg" id="img5"><b>&#160 bebe you</b> <span style="margin-left:22%">
+                               50 muntul friend</span><button style="margin-left:26%">Add friend</button></span><br>
+                          
+                               <span ><img src="img/481408_210680572412433_1558096721_n.jpg" id="img5"><b>&#160 Ebram koko</b> <span style="margin-left:22%">
+                                    50 muntul friend</span><button style="margin-left:26%">Add friend</button></span><br>
+                                    <span ><img src="img/avatar3.png" id="img5"><b>&#160 اسامه عاطف </b> <span style="margin-left:22%">
+                                            50 muntul friend</span><button style="margin-left:26%">Add friend</button></span>
+
+                               
+
+                 </div>
+        
+                </div>
+
+
+              
+              <div class="col-lg-2" style="  height:600px;position:fixed;top:0; right:5%;margin-top:56px"  id="hidechate">
+                  
+                    <div class="dropup"     style="margin-top:555px;">
+                            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" style="width:90%">
+                              chats
+                            </button>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="#"><img src="img/avatar3.png" id="img5">  kero elkomes</a>
+                              <a class="dropdown-item" href="#"><img src="img/avatar3.png" id="img5">  George Michel</a>
+                              <a class="dropdown-item" href="#"><img src="img/481408_210680572412433_1558096721_n.jpg" id="img5"> mariam elkomes</a>
+                              <a class="dropdown-item" href="#"><img src="img/Penguin.jpg" id="img5">  ebram  kero</a>
+                              <a class="dropdown-item" href="#"><img src="img/forest.jpg" id="img5">  beemen mishel</a>
+                              <a class="dropdown-item" href="#"><img src="img/481408_210680572412433_1558096721_n.jpg" id="img5"> Demiana ebram</a>
+                              <a class="dropdown-item" href="#"><img src="img/lights.jpg" id="img5">Dalia emad</a>
+                              <a class="dropdown-item" href="#"><img src="img/avatar3.png" id="img5"> keroo ebram</a>
+                              <a class="dropdown-item" href="#"><img src="img/481408_210680572412433_1558096721_n.jpg" id="img5">  George Michel</a>
+                              <a class="dropdown-item" href="#"><img src="img/avatar3.png" id="img5">kero elkomes</a>
+                              <a class="dropdown-item" href="#"><img src="img/Penguin.jpg" id="img5"> Bensh elkomes </a>
+                            
+                              <a class="dropdown-item" href="#" onclick="event.preventDefault();" ><img src="img/481408_210680572412433_1558096721_n.jpg" id="img5">Marina yousef</a>
+                              <a class="dropdown-item" href="#"   onclick="event.preventDefault();"><img src="img/avatar3.png" id="img5" >kero ebram</a>
+                            </div>
+                          </div>
+                        </div>
+                        
+            
+                
+
+            </div>
+        </div>
+       
+    
+
+     </div>
+    </body>
+</html>
